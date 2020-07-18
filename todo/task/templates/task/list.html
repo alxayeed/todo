@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Hello Thereeee!</h3>
+
+    <form method="POST" action="/"> 
+        {{ form.title }}
+        {{ form.description }}
+    <input type="submit" name="Add Task">
+    </form>
+    <h3>To DO</h3>
+    {% for task in tasks%}
+        <div class="div">
+            <p>{{ task.title }}</p> 
+        </div>
+
+    {% endfor %}
+
+
 </body>
 </html>
