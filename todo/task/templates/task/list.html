@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<div class="center" style="position:center;">
     <form method="POST" action="/">
         {% csrf_token %}
         {{ form.title }}
@@ -25,6 +25,7 @@
 
             <a href="{% url 'delete' task.id %}"> Delete</a>
         </div>
+</div>
 
     {% endfor %}
 
